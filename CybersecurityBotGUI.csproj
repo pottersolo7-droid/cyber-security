@@ -1,0 +1,28 @@
+  <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>   <!-- Add this -->
+  </PropertyGroup>
+
+	  <ItemGroup>
+		  <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+	  </ItemGroup>
+
+	  <ItemGroup>
+		  <None Update="greeting.wav">
+			  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		  </None>
+		  <None Update="bot.jpg">
+			  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		  </None>
+		  <None Update="user.jpg">
+			  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		  </None>
+	  </ItemGroup>
+
+</Project>
